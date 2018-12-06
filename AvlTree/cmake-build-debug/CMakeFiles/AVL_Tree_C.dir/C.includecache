@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mbp/Dropbox/OSU/DataStructures/AVL_Tree_C/avlTree.c
+stdlib.h
+-
+assert.h
+-
+stdio.h
+-
+avlTree.h
+/home/mbp/Dropbox/OSU/DataStructures/AVL_Tree_C/avlTree.h
+
+/home/mbp/Dropbox/OSU/DataStructures/AVL_Tree_C/avlTree.h
+stdlib.h
+-
+
+/home/mbp/Dropbox/OSU/DataStructures/AVL_Tree_C/main.c
+stdio.h
+-
+avlTree.h
+/home/mbp/Dropbox/OSU/DataStructures/AVL_Tree_C/avlTree.h
+

@@ -1,0 +1,34 @@
+/* Name: Mathew McDade
+ * Date: 09/30/2017 10:13:29 PM
+ * CS 261 Assignment 2 - Part 2
+ */
+
+1. How many cost units are spent in the entire process of performing 32 consecutive push operations on an empty array which starts
+out at capacity 8, assuming that the array will double in capacity each time a new item is added to an already full dynamic array? As
+N (ie. the number of pushes) grows large, under this strategy for resizing, what is the big-oh complexity for a push?
+n=32, amortized total=56, amortized average=1.75;
+n=320, amortized total=824, amortized average=2.58;
+n=3200, amortized total=7288, amortized average=2.28;
+n=32000, amortized total=64760, amortized average=2.02.
+Asymptotic complexity: O(1)+
+
+2. How many cost units are spent in the entire process of performing 32 consecutive push operations on an empty array which starts out
+at capacity 8, assuming that the array will grow by a constant 2 spaces each time a new item is added to an already full dynamic
+array? As N (ie. the number of pushes) grows large, under this strategy for resizing, what is the big-oh complexity for a push?
+n=32, amortized total=260, amortized average=8.13;
+n=320, amortized total=25748, amortized average=80.48;
+n=3200, amortized total=2561588, amortized average=800.5;
+Asymptotic complexity: O(n)
+
+3. Suppose that a dynamic array stack doubles its capacity when it is full, and shrinks (on Pop only) its capacity by
+half when the array is half full or less. Can you devise a sequence of N push() and pop() operations which will result in poor
+performance (O(N^2) total cost)? How might you adjust the array's shrinking policy to avoid this? (Hint: You may assume that the
+initial capacity of the array is N/2.)
+If a sequence of back to back push() and pop() operations occurred that caused the array's capacity to shrink then expand
+on the next operation, it would create a scenario with very poor performance(O(n^2). Take for example a filled array that is
+half filled plus one. A pop() would call for a resize costing n, the size of the array + pop. An immediately following
+push() would go over capacity and call for a resize costing n, size of the array + push, to double capacity. If this went
+back and forth, it would result in an asymptotic time O(n^2). If you adjusted the shrinking policy to only shrink capacity
+by a quarter when the array size is half of capacity would prevent the sequential n cost actions and would be reflective of
+the relatively greater cost of of resizing up as opposed to resizing down, being capacity + 1 and (capacity / 2) + 1,
+respectively.
