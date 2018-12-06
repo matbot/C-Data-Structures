@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+Z:/Clouds/Dropbox/OSU/DataStructures/Heap_C/Heap_C.c
+stdlib.h
+-
+stdio.h
+-
+assert.h
+-
+Heap_C.h
+Z:/Clouds/Dropbox/OSU/DataStructures/Heap_C/Heap_C.h
+
+Z:/Clouds/Dropbox/OSU/DataStructures/Heap_C/Heap_C.h
+
+Z:/Clouds/Dropbox/OSU/DataStructures/Heap_C/main.c
+stdio.h
+-
+Heap_C.h
+Z:/Clouds/Dropbox/OSU/DataStructures/Heap_C/Heap_C.h
+

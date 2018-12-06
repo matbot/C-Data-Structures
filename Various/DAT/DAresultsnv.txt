@@ -1,0 +1,23 @@
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 1024 elements: 0 ms
+
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 2048 elements: 0 ms
+
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 4096 elements: 20 ms
+
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 8192 elements: 100 ms
+
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 16384 elements: 420 ms
+
+Memory used by Dynamic Array : 184 KB 
+Time for running contains() on 32768 elements: 1720 ms
+
+Memory used by Dynamic Array : 444 KB 
+Time for running contains() on 65536 elements: 6890 ms
+
+Memory used by Dynamic Array : 572 KB 
+Time for running contains() on 131072 elements: 27600 ms
